@@ -13,7 +13,7 @@ for i in range(1, n):
     dp[0][i] = dp[0][i-1] + graph[0][i]
 
 for i in range(1, n):
-    for j in range(i+1):
+    for j in range(1, i+1):
         dp[i][j] = max(dp[i-1][j] + graph[i][j], dp[i][j-1] + graph[i][j])
 
 print(dp[n-1][n-1])
