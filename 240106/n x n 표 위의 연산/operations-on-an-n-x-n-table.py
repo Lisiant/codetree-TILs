@@ -7,7 +7,7 @@ INF = int(1e9)
 
 n = int(input())
 graph = [list(map(str, input().split())) for _ in range(n)]
-max_val, min_val = 0, INF
+max_val, min_val = -INF, INF
 
 
 def in_range(x, y):
